@@ -15,7 +15,7 @@ function App() {
     if (index < 0) {
       setIndex(lastIndex);
     }
-  }, [index]); // only re-run effect if index changes
+  }, [index, people]); // only re-run effect if index changes
 
   useEffect(() => {
     console.log('initiating the effect timeout');

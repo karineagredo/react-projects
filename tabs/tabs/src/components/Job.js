@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
 const Job = ({ jobs, value }) => {
-  console.log(value);
   const { company, title, dates, duties } = jobs[value];
 
   return (
