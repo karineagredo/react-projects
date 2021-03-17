@@ -1,0 +1,88 @@
+:root {
+  --background-color-default: hsl(210, 36%, 96%);
+  --dark-gray: hsl(209, 61%, 16%);
+  --width-btn: 200px;
+  --heigth-btn: 33px;
+
+}
+
+body {
+  background-color: var(--background-color-default);
+  color: var(--dark-gray);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 2em;
+  color:#4C5270;
+}
+input {
+  width: var(--width-btn);
+  height: var(--heigth-btn);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  text-indent: 5px;
+}
+.container {
+  margin: 2rem auto;
+  text-align: center;
+}
+.btn {
+  background-color: #B4F8C8;
+  color: var(--dark-gray);
+  width: var(--width-btn);
+  height: var(--heigth-btn);
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+.btn:hover{
+  background-color: #FFAEBC;
+  transition: all .3s linear;
+  border:none;
+  outline: none;
+  color: white;
+}
+.btn:focus{
+  border: none;
+  outline: none;
+}
+.btn:active{
+  border:none;
+  outline: none;
+}
+
+.colorsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3rem auto;
+  width: 80vw;
+  text-align: center;
+}
+.color {
+  height: 200px;
+  width: 200px;
+  color: black;
+}
+.color.color-light {
+  color: white;
+}
+.input {
+  outline: 1px solid gray;
+}
+.input-error {
+  outline: 1px solid red;
+}
+@media all and (max-width: 700px){
+  .colorsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3rem auto;
+    width: 50vw;
+  }
+  .color {
+    height: 100px;
+    width: 100px;
+  }
+}
