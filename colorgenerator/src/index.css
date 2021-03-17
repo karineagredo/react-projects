@@ -1,6 +1,8 @@
 :root {
   --background-color-default: hsl(210, 36%, 96%);
   --dark-gray: hsl(209, 61%, 16%);
+  --error-clr: #FF7F50;
+;
   --width-btn: 200px;
   --heigth-btn: 33px;
 
@@ -72,7 +74,10 @@ input {
   outline: 1px solid gray;
 }
 .input-error {
-  outline: 1px solid red;
+  outline: 1px solid var(--error-clr);
+}
+.error {
+  color: var(--error-clr);
 }
 @media all and (max-width: 700px){
   .colorsContainer {

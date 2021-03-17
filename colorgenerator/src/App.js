@@ -40,7 +40,7 @@ function App() {
           <button type='submit' className='btn'>
             Generate
           </button>
-          {error && <p style={{ color: 'red' }}>{error}</p>}
+          {error && <p className='error'>{error}</p>}
         </form>
       </section>
       <section className='container'>
